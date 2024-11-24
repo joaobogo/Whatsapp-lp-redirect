@@ -23,9 +23,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px; /* Adjust padding for more side spacing */
+  padding: 15px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu-icon {
@@ -36,26 +42,15 @@ body {
   cursor: pointer;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centers the logo within its container */
-  flex-grow: 1; /* Ensures the logo takes up central space */
-  gap: 10px;
-}
-
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #25d366;
-  text-align: center;
 }
 
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  flex-shrink: 0; /* Prevents buttons from shrinking */
 }
 
 .download-btn {
@@ -197,23 +192,6 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .header {
-    padding: 15px 10px; /* Slightly adjust padding for mobile */
-  }
-
-  .logo-container {
-    flex-grow: 1; /* Ensures the logo remains centered */
-    justify-content: center; /* Logo is perfectly centered */
-  }
-
-  .menu-icon {
-    flex-shrink: 0; /* Keeps the menu icon properly aligned */
-  }
-
-  .buttons {
-    flex-shrink: 0;
-  }
-
   .footer-links {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -227,7 +205,11 @@ body {
 
 @media (max-width: 480px) {
   .header {
-    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    gap: 5px;
   }
 
   .footer-links {
