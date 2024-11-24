@@ -1,17 +1,15 @@
 import React from 'react';
 import './WhatsAppPage.css';
+import logo from '../assets/no-background-logo.png';
 
 const WhatsAppPage = () => {
   return (
     <div className="whatsapp-container">
       {/* Header Section */}
       <header className="header">
-        <div className="logo-container">
-          <button className="menu-icon">☰</button>
-          <div className="logo">WhatsApp</div>
-        </div>
-        <div className="buttons">
-          <button className="download-btn">Baixar</button>
+        <button className="menu-icon">☰</button>
+        <div className="logo">
+          <img src={logo} alt="WhatsApp Logo" />
         </div>
       </header>
 

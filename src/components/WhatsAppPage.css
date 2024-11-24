@@ -21,17 +21,12 @@ body {
 /* Header Section */
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  position: relative;
 }
 
 .menu-icon {
@@ -43,28 +38,14 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #25d366;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-}
-
-.download-btn {
-  font-size: 1rem;
-  padding: 8px 15px;
-  border-radius: 20px;
-  border: 1px solid #25d366;
-  background-color: #25d366;
-  color: white;
-  cursor: pointer;
-}
-
-.download-btn:hover {
-  background-color: #1da958;
+.logo img {
+  height: 65px; /* Larger size */
+  width: auto;
 }
 
 /* Main Content Section */
@@ -205,11 +186,7 @@ body {
 
 @media (max-width: 480px) {
   .header {
-    justify-content: space-between;
-  }
-
-  .logo-container {
-    gap: 5px;
+    flex-direction: row;
   }
 
   .footer-links {
