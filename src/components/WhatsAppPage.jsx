@@ -16,7 +16,7 @@ const WhatsAppPage = () => {
       {/* Main Content Section */}
       <main className="main-content">
         <h1>Conversar com +55 41 99628-4949 no WhatsApp</h1>
-        <button className="chat-btn"><a src="https://web.whatsapp.com/send/?phone=%2B5541988845634&context=ARBhCs794nkR9ap3psFPk7XXVpaH8M44Vh6Vj9Dly6QpXYjxgW78r0ftmC1yyJOO2mSpcwCFgK10D-g3z0cgSfFPyuKDembAeh3I3J0-aGNrPKWkQXdJX1JC-nv4zv_o0TVThjnfLtQqe7EXUmpSji9V0g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGwWT5leHRuA2FlbQIxMAABHZ3NYAyBorCzEXILrvNF5_M_x2X4-r1L25R_4aifg33hRK4WwRJkYnFSLw_aem_Jm1B6JT2uKSCXSXLpE06CQ">Iniciar conversa</a></button>
+        <button className="chat-btn"><link src="https://web.whatsapp.com/send/?phone=%2B5541988845634&context=ARBhCs794nkR9ap3psFPk7XXVpaH8M44Vh6Vj9Dly6QpXYjxgW78r0ftmC1yyJOO2mSpcwCFgK10D-g3z0cgSfFPyuKDembAeh3I3J0-aGNrPKWkQXdJX1JC-nv4zv_o0TVThjnfLtQqe7EXUmpSji9V0g&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawGwWT5leHRuA2FlbQIxMAABHZ3NYAyBorCzEXILrvNF5_M_x2X4-r1L25R_4aifg33hRK4WwRJkYnFSLw_aem_Jm1B6JT2uKSCXSXLpE06CQ">Iniciar conversa</link></button>
         <p>
           Ainda não tem o WhatsApp? <a href="#">Baixar</a>
         </p>
