@@ -4,61 +4,88 @@ import './WhatsAppPage.css';
 const WhatsAppPage = () => {
   return (
     <div className="whatsapp-container">
+      {/* Header Section */}
       <header className="header">
-        <div className="logo">WhatsApp</div>
-        <nav className="nav-links">
-          <a href="#">Features</a>
-          <a href="#">Privacy</a>
-          <a href="#">Help Center</a>
-          <a href="#">Blog</a>
-          <a href="#">For Business</a>
-          <a href="#">Apps</a>
-        </nav>
+        <div className="logo-container">
+          <button className="menu-icon">☰</button>
+          <div className="logo">WhatsApp</div>
+        </div>
         <div className="buttons">
-          <button className="login-btn">Log in</button>
-          <button className="download-btn">Download</button>
+          <button className="download-btn">Baixar</button>
         </div>
       </header>
+
+      {/* Main Content Section */}
       <main className="main-content">
-        <h1>Chat on WhatsApp with +55 41 99628-4949</h1>
-        <button className="chat-btn">Continue to Chat</button>
+        <h1>Conversar com +55 41 99628-4949 no WhatsApp</h1>
+        <button className="chat-btn">Iniciar conversa</button>
         <p>
-          Don’t have WhatsApp yet? <a href="#">Download</a>
+          Ainda não tem o WhatsApp? <a href="#">Baixar</a>
         </p>
       </main>
+
+      {/* Footer Section */}
       <footer className="footer">
-        <div className="footer-section">
-          <h3>WhatsApp</h3>
-          <button className="download-footer-btn">Download</button>
+        <button className="footer-download-btn">Baixar</button>
+
+        {/* Social Media Icons */}
+        <div className="footer-icons">
+          <a href="#"><i className="fab fa-twitter"></i></a>
+          <a href="#"><i className="fab fa-youtube"></i></a>
+          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="#"><i className="fab fa-facebook"></i></a>
         </div>
+
+        {/* Footer Links */}
         <div className="footer-links">
           <div>
-            <h4>What we do</h4>
-            <a href="#">Features</a>
-            <a href="#">Blog</a>
-            <a href="#">Security</a>
-            <a href="#">For Business</a>
+            <h4>O que fazemos</h4>
+            <ul>
+              <li><a href="#">Recursos</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Segurança</a></li>
+              <li><a href="#">Para empresas</a></li>
+            </ul>
           </div>
           <div>
-            <h4>Who we are</h4>
-            <a href="#">About us</a>
-            <a href="#">Careers</a>
-            <a href="#">Brand Center</a>
-            <a href="#">Privacy</a>
+            <h4>Quem somos</h4>
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Carreiras</a></li>
+              <li><a href="#">Central de marcas</a></li>
+              <li><a href="#">Privacidade</a></li>
+            </ul>
           </div>
           <div>
-            <h4>Use WhatsApp</h4>
-            <a href="#">Android</a>
-            <a href="#">iPhone</a>
-            <a href="#">Mac/PC</a>
-            <a href="#">WhatsApp Web</a>
+            <h4>Use o WhatsApp</h4>
+            <ul>
+              <li><a href="#">Android</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Mac/PC</a></li>
+              <li><a href="#">WhatsApp Web</a></li>
+            </ul>
           </div>
           <div>
-            <h4>Need help?</h4>
-            <a href="#">Contact Us</a>
-            <a href="#">Help Center</a>
-            <a href="#">Apps</a>
-            <a href="#">Security Advisories</a>
+            <h4>Precisa de ajuda?</h4>
+            <ul>
+              <li><a href="#">Fale conosco</a></li>
+              <li><a href="#">Central de ajuda</a></li>
+              <li><a href="#">Apps</a></li>
+              <li><a href="#">Alertas de Segurança</a></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Sitemap and Language Selector */}
+        <div className="sitemap">
+          <p>Sitemap | Termos e Política de Privacidade</p>
+          <p>2024 © WhatsApp LLC</p>
+          <div className="language-selector">
+            <select>
+              <option>Português (Brasil)</option>
+              <option>English</option>
+              <option>Español</option>
+            </select>
           </div>
         </div>
       </footer>
